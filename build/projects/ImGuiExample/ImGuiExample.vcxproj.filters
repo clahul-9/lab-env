@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\clahul-9-local\Documents\GitHub\lab-env\projects\ImGuiExample\code\exampleapp.cc">
+      <Filter>example</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\clahul-9-local\Documents\GitHub\lab-env\projects\ImGuiExample\code\main.cc">
+      <Filter>example</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\clahul-9-local\Documents\GitHub\lab-env\projects\ImGuiExample\code\exampleapp.h">
+      <Filter>example</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\clahul-9-local\Documents\GitHub\lab-env\projects\ImGuiExample\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="example">
+      <UniqueIdentifier>{56A7753F-08F1-3EB8-A1D3-1C5D9F2F6326}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

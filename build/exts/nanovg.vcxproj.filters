@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\clahul-9-local\Documents\GitHub\lab-env\exts\nanovg\src\nanovg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\clahul-9-local\Documents\GitHub\lab-env\exts\nanovg\src\nanovg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\clahul-9-local\Documents\GitHub\lab-env\exts\nanovg\src\nanovg_gl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\clahul-9-local\Documents\GitHub\lab-env\exts\nanovg\src\nanovg_gl_utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\clahul-9-local\Documents\GitHub\lab-env\exts\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{C2E05007-FAEC-329B-B859-1C2837DEA75F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{8BBC914A-F70F-39C5-9BE6-091ACC0FC217}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

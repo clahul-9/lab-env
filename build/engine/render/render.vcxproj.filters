@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\clahul-9-local\Documents\GitHub\lab-env\engine\render\window.cc">
+      <Filter>display</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\clahul-9-local\Documents\GitHub\lab-env\engine\config.cc">
+      <Filter>pch</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\clahul-9-local\Documents\GitHub\lab-env\engine\render\window.h">
+      <Filter>display</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\clahul-9-local\Documents\GitHub\lab-env\engine\config.h">
+      <Filter>pch</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\clahul-9-local\Documents\GitHub\lab-env\engine\render\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="display">
+      <UniqueIdentifier>{48BBE663-55B7-30D9-AF57-6517CAE925BE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pch">
+      <UniqueIdentifier>{440AD23C-DF85-3076-9C7C-5E6DF341A0F7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
