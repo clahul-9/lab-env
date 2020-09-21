@@ -25,6 +25,30 @@ void Matrix4d::print() {
 
 }
 
+Matrix4d Matrix4d::rotation(char axis, float degres){
+	switch (axis)
+	{
+	case 'x':
+		for (int i = 0; i < 4; i++)
+		{
+			for (int j = 0; j < 4; j++)
+			{
+				if (i==j && i ==3 || j==4)
+				{
+					set(i, j, 1);
+				}
+				else
+				{
+					set(i, j, 0);
+				}
+			}
+		}
+		break;
+	default:
+		break;
+	}
+}
+
 //overided operator
 Vector4d Matrix4d::operator*(Vector4d v) {
 	Vector4d temp;

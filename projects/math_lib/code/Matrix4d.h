@@ -13,6 +13,8 @@ public:
 	void set(int xyzw, int i, float value);
 
 	void print();
+
+	Matrix4d rotation(char axis, float degres);
 	//operator
 	Matrix4d operator*(Matrix4d mix);
 	Vector4d operator*(Vector4d v);
