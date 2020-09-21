@@ -4,7 +4,7 @@
 #include <math.h>
 
 int main() {
-	Vector4d v;
+	/*Vector4d v;
 	Matrix4d m;
 
 	Vector4d v1;
@@ -41,12 +41,22 @@ int main() {
 
 	m = m1 * m2;
 
-	m.print();
+	m.print();*/
 
 	/*v1.print();
 	
 	v = m1 * v1;
 	v.print();*/
 
-	
+	float m[16];
+
+	for (int i = 0; i < 16; i++)
+	{
+		m[i] = 1;
+	}
+
+	Matrix4d m1(m);
+
+
+	m1.print();
 }

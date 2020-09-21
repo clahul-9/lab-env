@@ -18,6 +18,7 @@ public:
 	Vector4d operator+(Vector4d v);
 	Vector4d operator-(Vector4d v);
 	Vector4d operator*(float n);
+	float& operator[](int n);
 
 };
 

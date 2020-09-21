@@ -8,7 +8,9 @@
 
 float v[4];
 
-Vector4d::Vector4d() {}
+Vector4d::Vector4d() {
+
+}
 
 
 //get/set
@@ -79,4 +81,7 @@ Vector4d Vector4d::operator*(float n) {
 
 	return temp;
 
+}
+float& Vector4d::operator[](int n) {
+	return v[n];
 }

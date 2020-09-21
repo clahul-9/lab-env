@@ -3,21 +3,18 @@
 class Matrix4d
 {
 private:
-	float m[4][4];
+	float m[16];
 public:
-	Matrix4d();
+	Matrix4d(float in[16]);
 
-	//sett/get
-		//x
-	float get(int xyzw,int i);
-	void set(int xyzw, int i, float value);
 
 	void print();
 
-	Matrix4d rotation(char axis, float degres);
+	void rotation(Vector4d v,float radians);
 	//operator
 	Matrix4d operator*(Matrix4d mix);
 	Vector4d operator*(Vector4d v);
+	float operator[](int n1);
 
 };
 
