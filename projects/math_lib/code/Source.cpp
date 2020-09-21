@@ -48,6 +48,12 @@ int main() {
 	v = m1 * v1;
 	v.print();*/
 
+	Vector4d v1;
+	v1.set(0, 1);
+	v1.set(1, 0);
+	v1.set(2, 0);
+	v1.set(3, 0);
+
 	float m[16];
 
 	for (int i = 0; i < 16; i++)
@@ -57,6 +63,7 @@ int main() {
 
 	Matrix4d m1(m);
 
+	Vector4d v = m1 * v1;
 
-	m1.print();
+	v.print();
 }

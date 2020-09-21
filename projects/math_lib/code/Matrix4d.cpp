@@ -9,6 +9,7 @@ Matrix4d::Matrix4d(float in[16]){
 		m[i] = in[i];
 	}
 }
+Matrix4d::Matrix4d() {}
 
 //get/set
 
@@ -47,33 +48,26 @@ void Matrix4d::rotation(Vector4d v,float r){
 
 
 //overided operator
-//Vector4d Matrix4d::operator*(Vector4d v) {
-//	Vector4d temp;
-//	for (int i = 0; i < 4; i++)
-//	{
-//		temp.set(i, (m[i][0] * v.get(0) + m[i][1] * v.get(1) + m[i][2] * v.get(2)+m[i][3]*v.get(3)));
-//	}
-//	return temp;
-//}
-//
-//Matrix4d Matrix4d::operator*(Matrix4d n) {
-//	Matrix4d temp;
-//	float t = 0;
-//	for (int k = 0; k < 4; k++)
-//	{
-//		for (int j = 0; j < 4; j++)
-//		{
-//			for (int i = 0; i < 4; i++)
-//			{
-//				t = t + (m[j][i] * n.get(i,k));
-//			}
-//
-//			temp.set(j, k, t);
-//			t = 0;
-//		}
-//	}
-//	return temp;
-//}
+Vector4d Matrix4d::operator*(Vector4d v) {
+	Vector4d temp;
+	
+	for (int i = 0; i < 4; i++)
+	{
+		temp[i] = (m[0 + i * 4] * v[0] + m[1 + i * 4] * v[1] + m[2 + i * 4] * v[2] + m[3 + i * 4] * v[3]);
+	}
+	return temp;
+}
+
+Matrix4d Matrix4d::operator*(Matrix4d n) {
+	float temp[16];
+	for (int i = 0; i < 16; i++)//temp
+	{
+		if (i)
+		{
+
+		}
+	}
+}
 
 
 

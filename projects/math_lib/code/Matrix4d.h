@@ -6,7 +6,7 @@ private:
 	float m[16];
 public:
 	Matrix4d(float in[16]);
-
+	Matrix4d();
 
 	void print();
 
