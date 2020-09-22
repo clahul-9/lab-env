@@ -60,13 +60,19 @@ Vector4d Matrix4d::operator*(Vector4d v) {
 
 Matrix4d Matrix4d::operator*(Matrix4d n) {
 	float temp[16];
-	for (int i = 0; i < 16; i++)//temp
+	for (int i = 0; i < 16; i++)
 	{
-		if (i)
-		{
+		for (int k = 0; k < 4; k++)
 
+		{
+			for (int j = 0; j < 4; j++)
+			{
+				temp[i] = m[j * (k + 1)] * n[((j*(k+1)) - 4 * k) * 4 + k];
+			}
 		}
 	}
+	Matrix4d out(temp);
+	return out;
 }
 
 
