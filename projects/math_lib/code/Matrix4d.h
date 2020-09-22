@@ -11,10 +11,12 @@ public:
 	void print();
 
 	void rotation(Vector4d v,float radians);
+	void transpose();
+	void inverse();
 	//operator
 	Matrix4d operator*(Matrix4d mix);
 	Vector4d operator*(Vector4d v);
-	float operator[](int n1);
+	float& operator[](int n1);
 
 };
 

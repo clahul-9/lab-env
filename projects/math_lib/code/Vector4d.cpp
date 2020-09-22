@@ -8,15 +8,18 @@
 
 float v[4];
 
-Vector4d::Vector4d() {
+Vector4d::Vector4d(float x, float y, float z, float w) {
+	v[0] = x;
+	v[1] = y;
+	v[2] = z;
+	v[3] = w;
 
 }
 
+Vector4d::Vector4d(){}
 
 //get/set
 	//x
-float Vector4d::get(int xyzw) { return v[xyzw]; }
-void Vector4d::set(int xyzw, float value) { v[xyzw] = value; }
 
 
 
@@ -34,14 +37,14 @@ float Vector4d::normalize(){
 }
 
 float Vector4d::dotProduct(Vector4d w){
-	return (v[0] * w.get(0) +v[1] * w.get(1) + v[2] * w.get(2) + v[3] * w.get(3));
+	return (v[0] * w[0] +v[1] * w[1] + v[2] * w[2] + v[3] * w[3]);
 }
 
 Vector4d Vector4d::crossProduct(Vector4d w) {
 	Vector4d temp;
-	temp.set(0, ((v[1] * w.get(2)) - (v[2] * w.get(1))));
-	temp.set(1,( (v[2] * w.get(0))-(v[0] * w.get(2))  ));
-	temp.set(2,((v[0] * w.get(1)) - (v[1] * w.get(0))));
+	temp[0] = (v[1] * w[2] - v[2] * w[1]);
+	temp[1] = (v[2] * w[0] - v[0] * w[2]);
+	temp[2] = (v[0] * w[1] - v[1] * w[0]);
 
 	return temp;
 }
@@ -51,10 +54,10 @@ Vector4d Vector4d::operator+(Vector4d w) {
 
 	Vector4d temp;
 
-	temp.set(0, (v[0] + w.get(0)));
-	temp.set(1, (v[1] + w.get(1)));
-	temp.set(2, (v[2] + w.get(2)));
-	temp.set(3, (v[3] + w.get(3)));
+	temp[0] = (v[0] + w[0]);
+	temp[1] = (v[1] + w[1]);
+	temp[2] = (v[2] + w[2]);
+	temp[3] = (v[3] + w[3]);
 
 	return temp;
 }
@@ -62,10 +65,10 @@ Vector4d Vector4d::operator+(Vector4d w) {
 Vector4d Vector4d::operator-(Vector4d w){
 	Vector4d temp;
 
-	temp.set(0, (v[0] - w.get(0)));
-	temp.set(1, (v[1] - w.get(1)));
-	temp.set(2, (v[0] - w.get(2)));
-	temp.set(3, (v[3] - w.get(3)));
+	temp[0] = (v[0] - w[0]);
+	temp[1] = (v[1] - w[1]);
+	temp[2] = (v[0] - w[2]);
+	temp[3] = v[3] - w[3];
 
 	return temp;
 
@@ -74,10 +77,10 @@ Vector4d Vector4d::operator-(Vector4d w){
 Vector4d Vector4d::operator*(float n) {
 	Vector4d temp;
 
-	temp.set(0, (v[0] * n));
-	temp.set(1, (v[1] * n));
-	temp.set(2, (v[2] * n));
-	temp.set(3, (v[3] * n));
+	temp[0] = (v[0] * n);
+	temp[1] = (v[1] * n);
+	temp[2] = (v[2] * n);
+	temp[3] = (v[3] * n);
 
 	return temp;
 

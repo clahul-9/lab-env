@@ -4,10 +4,8 @@ class Vector4d
 private:
 	float v[4];
 public:
+	Vector4d(float x, float y, float z, float w = 0 );
 	Vector4d();
-
-	float get(int xyzw);
-	void set(int xyzw, float value);
 
 	float leanght();
 	float normalize();
