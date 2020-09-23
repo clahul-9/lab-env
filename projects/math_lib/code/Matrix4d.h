@@ -8,8 +8,6 @@ public:
 	Matrix4d(float in[16]);
 	Matrix4d();
 
-	void print();
-
 	void rotation(Vector4d v,float radians);
 	void transpose();
 	void inverse();

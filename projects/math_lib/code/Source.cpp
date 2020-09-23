@@ -9,12 +9,12 @@ int main() {
 	
 	for (int j = 0; j < 16; j++)
 	{
-		temp[j] = j;
+		temp[j] = 1;
 	}
 
 	Matrix4d m1(temp);
 	m1.print();
-	m1.transpose();
+	m1.inverse();
 	m1.print();
 
 }

@@ -316,7 +316,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="C:\Users\clahul-9-local\Documents\GitHub\lab-env\projects\math_lib\code\Matrix4d.h" />
     <ClInclude Include="C:\Users\clahul-9-local\Documents\GitHub\lab-env\projects\math_lib\code\Vector4d.h" />
     <ClCompile Include="C:\Users\clahul-9-local\Documents\GitHub\lab-env\projects\math_lib\code\Matrix4d.cpp" />
-    <ClCompile Include="C:\Users\clahul-9-local\Documents\GitHub\lab-env\projects\math_lib\code\Source.cpp" />
     <ClCompile Include="C:\Users\clahul-9-local\Documents\GitHub\lab-env\projects\math_lib\code\Vector4d.cpp" />
   </ItemGroup>
   <ItemGroup>
