@@ -4,7 +4,11 @@
 
 SET(files_core
 	app.h
-	app.cc)
+	app.cc
+	Matrix4d.h
+	Matrix4d.cpp
+	Vector4d.h
+	Vector4d.cpp)
 SOURCE_GROUP("core" FILES ${files_core})
 	
 SET(files_pch ../config.h ../config.cc)

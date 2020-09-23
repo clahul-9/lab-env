@@ -4,12 +4,24 @@
     <ClCompile Include="C:\Users\clahul-9-local\Documents\GitHub\lab-env\engine\core\app.cc">
       <Filter>core</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\clahul-9-local\Documents\GitHub\lab-env\engine\core\Matrix4d.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\clahul-9-local\Documents\GitHub\lab-env\engine\core\Vector4d.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
     <ClCompile Include="C:\Users\clahul-9-local\Documents\GitHub\lab-env\engine\config.cc">
       <Filter>pch</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C:\Users\clahul-9-local\Documents\GitHub\lab-env\engine\core\app.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\clahul-9-local\Documents\GitHub\lab-env\engine\core\Matrix4d.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\clahul-9-local\Documents\GitHub\lab-env\engine\core\Vector4d.h">
       <Filter>core</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\clahul-9-local\Documents\GitHub\lab-env\engine\config.h">
