@@ -222,6 +222,12 @@ ImGuiExample_SOURCE_DIR:STATIC=C:/Users/clahul-9-local/Documents/GitHub/lab-env/
 // lib or lib64
 LIB_SUFFIX:STRING=
 
+//Value Computed by CMake
+Mesh_BINARY_DIR:STATIC=C:/Users/clahul-9-local/Documents/GitHub/lab-env/build/projects/Mesh resources
+
+//Value Computed by CMake
+Mesh_SOURCE_DIR:STATIC=C:/Users/clahul-9-local/Documents/GitHub/lab-env/projects/Mesh resources
+
 //OpenGL library for win32
 OPENGL_gl_LIBRARY:STRING=opengl32
 
@@ -355,7 +361,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MT
 CMAKE_MT-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=12
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=11
 //Platform information initialized
 CMAKE_PLATFORM_INFO_INITIALIZED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_RC_COMPILER
