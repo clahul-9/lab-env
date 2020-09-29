@@ -174,6 +174,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Project>{CB8FFA4A-72CE-3A6A-B53C-8BFBE79711BB}</Project>
       <Name>ImGuiExample</Name>
     </ProjectReference>
+    <ProjectReference Include="C:\Users\clahul-9-local\Documents\GitHub\lab-env\build\projects\Mesh_resources\Mesh_resources.vcxproj">
+      <Project>{AEABD053-3FFD-39B4-BBED-FC9F1F529E73}</Project>
+      <Name>Mesh_resources</Name>
+    </ProjectReference>
     <ProjectReference Include="C:\Users\clahul-9-local\Documents\GitHub\lab-env\build\engine\core\core.vcxproj">
       <Project>{D6821370-39DD-3566-91BD-43B9F1DA872E}</Project>
       <Name>core</Name>

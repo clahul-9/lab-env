@@ -10,6 +10,8 @@ C:/Users/clahul-9-local/Documents/GitHub/lab-env/build/engine/core/CMakeFiles/co
 C:/Users/clahul-9-local/Documents/GitHub/lab-env/build/engine/render/CMakeFiles/render.dir
 C:/Users/clahul-9-local/Documents/GitHub/lab-env/build/projects/ImGuiExample/CMakeFiles/ImGuiExample.dir
 C:/Users/clahul-9-local/Documents/GitHub/lab-env/build/projects/ImGuiExample/CMakeFiles/ALL_BUILD.dir
+C:/Users/clahul-9-local/Documents/GitHub/lab-env/build/projects/Mesh_resources/CMakeFiles/Mesh_resources.dir
+C:/Users/clahul-9-local/Documents/GitHub/lab-env/build/projects/Mesh_resources/CMakeFiles/ALL_BUILD.dir
 C:/Users/clahul-9-local/Documents/GitHub/lab-env/build/projects/example/CMakeFiles/example.dir
 C:/Users/clahul-9-local/Documents/GitHub/lab-env/build/projects/example/CMakeFiles/ALL_BUILD.dir
 C:/Users/clahul-9-local/Documents/GitHub/lab-env/build/projects/math_lib/CMakeFiles/mathlib.dir
