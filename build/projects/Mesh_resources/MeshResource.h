@@ -10,5 +10,8 @@ class MeshResource
 	MeshResource();
 
 	void vertexBuffer(vertex v[], int size);
+	void indexBuffer(unsigned int ibuf[], int size);
+
+	void render();
 };
 
