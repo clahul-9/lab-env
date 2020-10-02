@@ -71,10 +71,16 @@ ExampleApp::Open()
 		//	0,		0,		1,		1	// color 0
 		//};
 
-	MeshResource::vertex v0{ { -0.5f,	-0.5f,	-1 } ,{ 1,		0,		0,		1 } };
+	MeshResource::vertex v0{ { -0.75,	-0.5f,	-1 } ,{ 1,		0,		0,		1 } };
 	MeshResource::vertex v1{ {0,		0.5f,	-1	},{0,		1,		0,		1} };
-	MeshResource::vertex v2{ {0.5f,	-0.5f,	-1	},{0,		0,		1,		1} };
-	MeshResource::vertex v[3] = { v0,v1,v2 };
+	MeshResource::vertex v2{ {0,	-0.5f,	-1	},{0,		0,		1,		1} };
+
+	MeshResource::vertex w0{ { 0,	-0.5f,	-1 } ,{ 1,		0,		0,		1 } };
+	MeshResource::vertex w1{ {0,		0.5f,	-1	},{0,		1,		0,		1} };
+	MeshResource::vertex w2{ {0.75f,	-0.5f,	-1	},{0,		0,		1,		1} };
+
+	MeshResource::vertex v[] = { v0,v1,v2 };
+	MeshResource::vertex w[] = { w0,w1,w2 };
 
 
 	if (this->window->Open())
@@ -133,6 +139,7 @@ ExampleApp::Open()
 		// setup vbo
 		MeshResource m;
 		vbo = m.vertexBuffer(v, 3);
+
 		
 			/*glGenBuffers(1, &this->triangle);
 			glBindBuffer(GL_ARRAY_BUFFER, this->triangle);
