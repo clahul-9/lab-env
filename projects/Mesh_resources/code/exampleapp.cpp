@@ -5,6 +5,8 @@
 #include "config.h"
 #include "exampleapp.h"
 #include <cstring>
+#include "MeshResource.h"
+
 
 const GLchar* vs =
 "#version 430\n"
@@ -59,15 +61,21 @@ ExampleApp::Open()
 		this->window->Close();
 	});
 
-	GLfloat buf[] =
-	{
-		-0.5f,	-0.5f,	-1,			// pos 0
-		1,		0,		0,		1,	// color 0
-		0,		0.5f,	-1,			// pos 1
-		0,		1,		0,		1,	// color 0
-		0.5f,	-0.5f,	-1,			// pos 2
-		0,		0,		1,		1	// color 0
-	};
+		//GLfloat buf[] =
+		//{
+		//	-0.5f,	-0.5f,	-1,			// pos 0
+		//	1,		0,		0,		1,	// color 0
+		//	0,		0.5f,	-1,			// pos 1
+		//	0,		1,		0,		1,	// color 0
+		//	0.5f,	-0.5f,	-1,			// pos 2
+		//	0,		0,		1,		1	// color 0
+		//};
+
+	MeshResource::vertex v0{ { -0.5f,	-0.5f,	-1 } ,{ 1,		0,		0,		1 } };
+	MeshResource::vertex v1{ {0,		0.5f,	-1	},{0,		1,		0,		1} };
+	MeshResource::vertex v2{ {0.5f,	-0.5f,	-1	},{0,		0,		1,		1} };
+	MeshResource::vertex v[3] = { v0,v1,v2 };
+
 
 	if (this->window->Open())
 	{
@@ -123,10 +131,13 @@ ExampleApp::Open()
 		}
 
 		// setup vbo
-		glGenBuffers(1, &this->triangle);
-		glBindBuffer(GL_ARRAY_BUFFER, this->triangle);
-		glBufferData(GL_ARRAY_BUFFER, sizeof(buf), buf, GL_STATIC_DRAW);
-		glBindBuffer(GL_ARRAY_BUFFER, 0);
+		MeshResource m;
+		vbo = m.vertexBuffer(v, 3);
+		
+			/*glGenBuffers(1, &this->triangle);
+			glBindBuffer(GL_ARRAY_BUFFER, this->triangle);
+			glBufferData(GL_ARRAY_BUFFER, sizeof(buf), buf, GL_STATIC_DRAW);
+			glBindBuffer(GL_ARRAY_BUFFER, 0);*/
 		return true;
 	}
 	return false;
@@ -144,7 +155,7 @@ ExampleApp::Run()
 		this->window->Update();
 
 		// do stuff
-		glBindBuffer(GL_ARRAY_BUFFER, this->triangle);
+		glBindBuffer(GL_ARRAY_BUFFER, this->vbo);
 		glUseProgram(this->program);
 		glEnableVertexAttribArray(0);
 		glEnableVertexAttribArray(1);

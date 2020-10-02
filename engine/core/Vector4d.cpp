@@ -1,3 +1,4 @@
+#include "config.h"
 #include "Vector4d.h"
 #include<stdio.h>
 #include<math.h>

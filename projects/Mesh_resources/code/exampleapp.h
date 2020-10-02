@@ -8,6 +8,7 @@
 //------------------------------------------------------------------------------
 #include "core/app.h"
 #include "render/window.h"
+#include "MeshResource.h"
 
 namespace Example
 {
@@ -30,5 +31,7 @@ private:
 	GLuint pixelShader;
 	GLuint triangle;
 	Display::Window* window;
+	unsigned int vbo;
+
 };
 } // namespace Example

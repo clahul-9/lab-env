@@ -313,9 +313,11 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="C:\Users\clahul-9-local\Documents\GitHub\lab-env\projects\Mesh_resources\code\MeshResource.h" />
+    <ClInclude Include="C:\Users\clahul-9-local\Documents\GitHub\lab-env\projects\Mesh_resources\code\exampleapp.h" />
+    <ClCompile Include="C:\Users\clahul-9-local\Documents\GitHub\lab-env\projects\Mesh_resources\code\MeshResource.cpp" />
     <ClCompile Include="C:\Users\clahul-9-local\Documents\GitHub\lab-env\projects\Mesh_resources\code\exampleapp.cpp" />
     <ClCompile Include="C:\Users\clahul-9-local\Documents\GitHub\lab-env\projects\Mesh_resources\code\main.cpp" />
-    <ClCompile Include="MeshResource.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:\Users\clahul-9-local\Documents\GitHub\lab-env\build\ZERO_CHECK.vcxproj">
@@ -340,9 +342,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Project>{70E71993-1402-3A9E-9343-13798AC72104}</Project>
       <Name>nanovg</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="MeshResource.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

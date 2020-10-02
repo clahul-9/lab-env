@@ -1,6 +1,7 @@
 #pragma once
 class MeshResource
 {
+public:
 	struct vertex
 	{
 		float position[3];
@@ -9,9 +10,9 @@ class MeshResource
 
 	MeshResource();
 
-	void vertexBuffer(vertex v[], int size);
+	int vertexBuffer(vertex v[], int size);
 	void indexBuffer(unsigned int ibuf[], int size);
 
-	void render();
+	
 };
 

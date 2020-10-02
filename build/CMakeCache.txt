@@ -223,12 +223,6 @@ ImGuiExample_SOURCE_DIR:STATIC=C:/Users/clahul-9-local/Documents/GitHub/lab-env/
 LIB_SUFFIX:STRING=
 
 //Value Computed by CMake
-Mesh_BINARY_DIR:STATIC=C:/Users/clahul-9-local/Documents/GitHub/lab-env/build/projects/Mesh resources
-
-//Value Computed by CMake
-Mesh_SOURCE_DIR:STATIC=C:/Users/clahul-9-local/Documents/GitHub/lab-env/projects/Mesh resources
-
-//Value Computed by CMake
 Mesh_resources_BINARY_DIR:STATIC=C:/Users/clahul-9-local/Documents/GitHub/lab-env/build/projects/Mesh_resources
 
 //Value Computed by CMake

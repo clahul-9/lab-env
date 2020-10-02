@@ -1,5 +1,7 @@
+#include "config.h"
 #include "Matrix4d.h"
 #include <iostream>
+
 
 float m[16];
 
