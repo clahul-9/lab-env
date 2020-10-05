@@ -33,5 +33,7 @@ private:
 	Display::Window* window;
 	unsigned int vbo;
 
+	MeshResource m;
+
 };
 } // namespace Example

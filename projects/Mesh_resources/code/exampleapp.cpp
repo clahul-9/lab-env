@@ -71,17 +71,12 @@ ExampleApp::Open()
 		//	0,		0,		1,		1	// color 0
 		//};
 
-	MeshResource::vertex v0{ { -0.75,	-0.5f,	-1 } ,{ 1,		0,		0,		1 } };
-	MeshResource::vertex v1{ {0,		0.5f,	-1	},{0,		1,		0,		1} };
-	MeshResource::vertex v2{ {0,	-0.5f,	-1	},{0,		0,		1,		1} };
+	MeshResource::vertex v0{ { -0.5,	0.5f,	0 } ,{ 1,		0,		0,		1 } };
+	MeshResource::vertex v1{ { 0.5f,	0.5f,	0	},{0,		1,		0,		1} };
+	MeshResource::vertex v2{ { 0.5f,	-0.5f,	0	},{0,		0,		1,		1} };
+	MeshResource::vertex v3{ {-0.5f, -0.5, 0},{1 ,1 ,1 ,1} };
 
-	MeshResource::vertex w0{ { 0,	-0.5f,	-1 } ,{ 1,		0,		0,		1 } };
-	MeshResource::vertex w1{ {0,		0.5f,	-1	},{0,		1,		0,		1} };
-	MeshResource::vertex w2{ {0.75f,	-0.5f,	-1	},{0,		0,		1,		1} };
-
-	MeshResource::vertex v[] = { v0,v1,v2 };
-	MeshResource::vertex w[] = { w0,w1,w2 };
-
+	MeshResource::vertex v[] = { v0,v1,v2, v2,v3,v0 };
 
 	if (this->window->Open())
 	{
@@ -137,8 +132,7 @@ ExampleApp::Open()
 		}
 
 		// setup vbo
-		MeshResource m;
-		vbo = m.vertexBuffer(v, 3);
+		vbo = m.vertexBuffer(v,6 );
 
 		
 			/*glGenBuffers(1, &this->triangle);
@@ -162,14 +156,18 @@ ExampleApp::Run()
 		this->window->Update();
 
 		// do stuff
-		glBindBuffer(GL_ARRAY_BUFFER, this->vbo);
-		glUseProgram(this->program);
-		glEnableVertexAttribArray(0);
-		glEnableVertexAttribArray(1);
-		glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, sizeof(float32) * 7, NULL);
-		glVertexAttribPointer(1, 4, GL_FLOAT, GL_FALSE, sizeof(float32) * 7, (GLvoid*)(sizeof(float32) * 3));
-		glDrawArrays(GL_TRIANGLES, 0, 3);
-		glBindBuffer(GL_ARRAY_BUFFER, 0);
+		//glBindBuffer(GL_ARRAY_BUFFER, this->vbo);
+		//glUseProgram(this->program);
+		//glEnableVertexAttribArray(0);
+		//glEnableVertexAttribArray(1);
+		//glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, sizeof(float32) * 7, NULL);
+		//glVertexAttribPointer(1, 4, GL_FLOAT, GL_FALSE, sizeof(float32) * 7, (GLvoid*)(sizeof(float32) * 3));
+		//glDrawArrays(GL_TRIANGLES, 0, 6);
+		//glBindBuffer(GL_ARRAY_BUFFER, 0);
+		
+
+
+		m.draw(6, vbo, this->program);
 
 		this->window->SwapBuffers();
 	}

@@ -13,6 +13,6 @@ public:
 	int vertexBuffer(vertex v[], int size);
 	void indexBuffer(unsigned int ibuf[], int size);
 
-	
+	void draw(int size, int vbo, int progran);
 };
 
